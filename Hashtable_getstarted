@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	unordered_map<string,int>menu;
+	menu["pizza"]=200;
+	menu["burger"]=300;
+	menu["meggi"]=123;
+	
+	string item ;
+	cin>>item;
+	
+	if(menu.count(item)==0)
+	cout<<item<<" is not available";
+	
+	else{
+	    cout<<item<<" is available";
+	}
+	
+	
+	return 0;
+}
