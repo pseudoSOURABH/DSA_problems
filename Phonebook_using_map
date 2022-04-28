@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	map<string,vector<string>>pb;
+	pb["sourabh"].push_back("894939202");
+	pb["sourabh"].push_back("6261003444");
+	
+	pb["sam"].push_back("11111111");
+	pb["sam"].push_back("22222222");
+	
+	for(pair<string,vector<string>>item:pb)
+	{
+	    cout<<item.first<<" ";
+	    for(auto it:item.second)
+	    {
+	        cout<<it<<" ";
+	    }cout<<endl;
+	}
+	return 0;
+}
