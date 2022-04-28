@@ -6,17 +6,28 @@ int main() {
 	menu["pizza"]=200;
 	menu["burger"]=300;
 	menu["meggi"]=123;
-	
+	menu["momos"]=99;
+	menu["paneer"]=400;
+	 
+	 //updating an item
+	 menu["pizza"]=249;
+	 
+	 //deleting an element
+	 menu.erase("meggi");
 	string item ;
 	cin>>item;
 	
 	if(menu.count(item)==0)
-	cout<<item<<" is not available";
+	cout<<item<<" is not available"<<endl;
 	
 	else{
-	    cout<<item<<" is available";
+	    cout<<item<<" is available"<<endl;;
 	}
 	
+	for(pair<string,int>i:menu)
+	{
+	cout<<i.first<<"-"<<i.second<<endl;}
+       cout<<endl;
 	
 	return 0;
 }
